@@ -1,1 +1,1 @@
-# GarageAuthomationSystem
+# GarageAutomationSystem
