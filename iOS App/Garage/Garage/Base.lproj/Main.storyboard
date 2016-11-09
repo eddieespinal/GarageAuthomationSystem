@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BRB-kA-Kxd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Garage-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Garage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaR-4h-PAQ" userLabel="leftDoorButton">
+                                <rect key="frame" x="11" y="188" width="175" height="141"/>
+                                <state key="normal" image="door_closed"/>
+                                <connections>
+                                    <action selector="garageOpenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T4A-xG-ozv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOSED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYa-lV-dzM">
+                                <rect key="frame" x="20" y="337" width="156" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="ydk-LV-T4Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.65490196079999996" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOSED" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mIa-WI-116">
+                                <rect key="frame" x="199" y="337" width="156" height="26"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <color key="textColor" red="0.21176470589999999" green="0.65490196079999996" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eddie's Garage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tjV-D3-5k6">
+                                <rect key="frame" x="20" y="86" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LVE-tr-xzi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-SemiBold" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_garage" translatesAutoresizingMaskIntoConstraints="NO" id="MdR-gS-5Hp">
+                                <rect key="frame" x="20" y="393" width="335" height="254"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eT-Vg-NbV">
+                                <rect key="frame" x="20" y="375" width="335" height="1"/>
+                                <color key="backgroundColor" red="0.85569371727748689" green="0.85569371727748689" blue="0.85569371727748689" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pqp-Y8-pMt">
+                                <rect key="frame" x="20" y="124" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <color key="textColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rgy-G6-Oup" userLabel="rightDoorButton">
+                                <rect key="frame" x="190" y="188" width="175" height="141"/>
+                                <state key="normal" image="door_closed"/>
+                                <connections>
+                                    <action selector="garageOpenButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mcS-lG-elo"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="9hc-K6-86C">
+                                <rect key="frame" x="331" y="396" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="NOD-Wx-OSt"/>
+                                    <constraint firstAttribute="width" constant="20" id="vcf-QP-AZm"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="MdR-gS-5Hp" secondAttribute="bottom" constant="20" id="074-LC-6Jc"/>
+                            <constraint firstItem="HYa-lV-dzM" firstAttribute="leading" secondItem="tjV-D3-5k6" secondAttribute="leading" id="30O-Wb-GI9"/>
+                            <constraint firstItem="MdR-gS-5Hp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="6yq-38-idf"/>
+                            <constraint firstAttribute="trailing" secondItem="MdR-gS-5Hp" secondAttribute="trailing" constant="20" id="7Hr-JZ-Ode"/>
+                            <constraint firstItem="rgy-G6-Oup" firstAttribute="leading" secondItem="mIa-WI-116" secondAttribute="leading" constant="-9" id="8ZF-RV-ccM"/>
+                            <constraint firstItem="yaR-4h-PAQ" firstAttribute="leading" secondItem="HYa-lV-dzM" secondAttribute="leading" constant="-9" id="CEh-hm-WYj"/>
+                            <constraint firstItem="yaR-4h-PAQ" firstAttribute="trailing" secondItem="HYa-lV-dzM" secondAttribute="trailing" constant="10" id="D26-fn-m97"/>
+                            <constraint firstItem="9hc-K6-86C" firstAttribute="top" secondItem="6eT-Vg-NbV" secondAttribute="bottom" constant="20" id="EFd-wR-2J8"/>
+                            <constraint firstItem="6eT-Vg-NbV" firstAttribute="leading" secondItem="HYa-lV-dzM" secondAttribute="leading" id="G8A-8a-HRO"/>
+                            <constraint firstItem="Pqp-Y8-pMt" firstAttribute="leading" secondItem="tjV-D3-5k6" secondAttribute="leading" id="Isy-Nm-wb9"/>
+                            <constraint firstAttribute="bottom" secondItem="HYa-lV-dzM" secondAttribute="bottom" constant="304" id="IzY-nl-WGU"/>
+                            <constraint firstItem="mIa-WI-116" firstAttribute="top" secondItem="rgy-G6-Oup" secondAttribute="bottom" constant="8" symbolic="YES" id="JMr-C9-IDc"/>
+                            <constraint firstItem="tjV-D3-5k6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="Lee-Ih-kNZ"/>
+                            <constraint firstItem="Pqp-Y8-pMt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="N7r-Fs-QwV"/>
+                            <constraint firstItem="HYa-lV-dzM" firstAttribute="baseline" secondItem="mIa-WI-116" secondAttribute="baseline" id="OGn-NR-Kig"/>
+                            <constraint firstItem="mIa-WI-116" firstAttribute="leading" secondItem="HYa-lV-dzM" secondAttribute="trailing" constant="23" id="TTT-Yl-SnL"/>
+                            <constraint firstItem="mIa-WI-116" firstAttribute="trailing" secondItem="tjV-D3-5k6" secondAttribute="trailing" id="WOP-Gr-J9y"/>
+                            <constraint firstItem="rgy-G6-Oup" firstAttribute="baseline" secondItem="yaR-4h-PAQ" secondAttribute="baseline" id="WiO-wZ-KLx"/>
+                            <constraint firstItem="6eT-Vg-NbV" firstAttribute="trailing" secondItem="MdR-gS-5Hp" secondAttribute="trailing" id="Yb0-r5-fxh"/>
+                            <constraint firstItem="6eT-Vg-NbV" firstAttribute="leading" secondItem="MdR-gS-5Hp" secondAttribute="leading" id="YfU-a6-cDB"/>
+                            <constraint firstItem="HYa-lV-dzM" firstAttribute="top" secondItem="yaR-4h-PAQ" secondAttribute="bottom" constant="8" symbolic="YES" id="ZLP-kS-VjC"/>
+                            <constraint firstAttribute="trailing" secondItem="9hc-K6-86C" secondAttribute="trailing" constant="24" id="ahB-dr-uoQ"/>
+                            <constraint firstItem="6eT-Vg-NbV" firstAttribute="trailing" secondItem="mIa-WI-116" secondAttribute="trailing" id="b6m-KM-YSp"/>
+                            <constraint firstItem="rgy-G6-Oup" firstAttribute="firstBaseline" secondItem="yaR-4h-PAQ" secondAttribute="firstBaseline" id="cHQ-Lc-Tny"/>
+                            <constraint firstItem="6eT-Vg-NbV" firstAttribute="top" secondItem="HYa-lV-dzM" secondAttribute="bottom" constant="12" id="dJf-Q2-9GD"/>
+                            <constraint firstItem="rgy-G6-Oup" firstAttribute="trailing" secondItem="mIa-WI-116" secondAttribute="trailing" constant="10" id="dUU-We-G9J"/>
+                            <constraint firstItem="MdR-gS-5Hp" firstAttribute="top" secondItem="6eT-Vg-NbV" secondAttribute="bottom" constant="17" id="fxY-av-G4M"/>
+                            <constraint firstAttribute="bottom" secondItem="6eT-Vg-NbV" secondAttribute="bottom" constant="291" id="g7T-ng-J2q"/>
+                            <constraint firstItem="HYa-lV-dzM" firstAttribute="firstBaseline" secondItem="mIa-WI-116" secondAttribute="firstBaseline" id="sdV-XP-TLq"/>
+                            <constraint firstItem="tjV-D3-5k6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="vGS-7P-C0U"/>
+                            <constraint firstItem="Pqp-Y8-pMt" firstAttribute="trailing" secondItem="tjV-D3-5k6" secondAttribute="trailing" id="xBJ-et-Ch1"/>
+                            <constraint firstAttribute="trailing" secondItem="tjV-D3-5k6" secondAttribute="trailing" constant="20" id="yQZ-bk-U7L"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Garage" id="2PR-zQ-CUS">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="eha-Ld-vMM">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicatorView" destination="9hc-K6-86C" id="va7-Et-rGZ"/>
+                        <outlet property="cameraImageView" destination="MdR-gS-5Hp" id="lE6-Zl-Ide"/>
+                        <outlet property="lastUpdatedLabel" destination="Pqp-Y8-pMt" id="smn-TC-DcG"/>
+                        <outlet property="leftDoorButton" destination="yaR-4h-PAQ" id="D4R-Hg-VTk"/>
+                        <outlet property="leftStatusLabel" destination="HYa-lV-dzM" id="rM3-bM-MSg"/>
+                        <outlet property="rightDoorButton" destination="rgy-G6-Oup" id="2at-XY-aeI"/>
+                        <outlet property="rightStatusLabel" destination="mIa-WI-116" id="j37-8J-dxK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1021.6" y="-396.25187406296857"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Ev-xb-pYr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="BRB-kA-Kxd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CSE-AX-mJc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.1058823529" green="0.29803921570000003" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Thin" family="Apple SD Gothic Neo" pointSize="0.0"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NKJ-Di-cDx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9jb-9d-FbT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="-396"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="door_closed" width="175" height="141"/>
+        <image name="placeholder_garage" width="750" height="690"/>
+    </resources>
+</document>
